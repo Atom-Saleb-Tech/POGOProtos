@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+message MapTileBundle {
+	repeated MapTileDataProto map_tile = 1;
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message MapTileDataProto {
+	MapTileProto map_tile = 1;
+	bytes tile_data = 2;
+}

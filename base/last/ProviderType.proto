@@ -1,0 +1,9 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum ProviderType {
+	NONE = 0;
+	GOOGLE = 1;
+	FACEBOOK = 2;
+	APPLE = 3;
+}
