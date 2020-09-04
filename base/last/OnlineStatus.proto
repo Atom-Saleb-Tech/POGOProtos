@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum OnlineStatus {
+	NOT_ONLINE = 0;
+	ONLINE_ELSEWHERE = 1;
+	ONLINE = 2;
+}

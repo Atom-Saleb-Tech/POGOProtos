@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum IncidentFinishSequence {
+	NONE = 0;
+	VICTORY = 1;
+}

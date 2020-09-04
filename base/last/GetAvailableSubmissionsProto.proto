@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message GetAvailableSubmissionsProto {
+	PlayerSubmissionTypeProto submission_type = 1;
+	repeated PlayerSubmissionTypeProto submission_types = 2;
+}

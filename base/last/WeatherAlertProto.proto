@@ -1,0 +1,12 @@
+syntax = "proto3";
+package DumpProtos;
+
+message WeatherAlertProto {
+	bool warn_weather = 2;
+
+	enum Severity {
+		NONE = 0;
+		MODERATE = 1;
+		EXTREME = 2;
+	}
+}

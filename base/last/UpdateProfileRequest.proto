@@ -1,0 +1,10 @@
+syntax = "proto3";
+package DumpProtos;
+
+message UpdateProfileRequest {
+	ProfileProto profile = 1;
+
+	message ProfileProto {
+		string profile_name_app_key = 1;
+	}
+}

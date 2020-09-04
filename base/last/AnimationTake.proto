@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum AnimationTake {
+	SINGLE = 0;
+	BRANCHING = 1;
+	SEQUENCE = 2;
+}

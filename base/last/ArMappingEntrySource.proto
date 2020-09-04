@@ -1,0 +1,11 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum ArMappingEntrySource {
+	EDIT_MENU = 0;
+	EDIT_TITLE = 1;
+	EDIT_DESCRIPTION = 2;
+	EDIT_PHOTO = 3;
+	EDIT_LOCATION = 4;
+	POI_SUBMISSION = 5;
+}

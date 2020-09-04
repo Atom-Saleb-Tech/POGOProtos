@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum IncidentStartContext {
+	NPC = 0;
+	POKESTOP = 1;
+	BALLOON = 2;
+}

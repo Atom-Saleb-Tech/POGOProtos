@@ -1,0 +1,12 @@
+syntax = "proto3";
+package DumpProtos;
+
+message RocketBalloonDisplayProto {
+	BalloonType type = 1;
+	RocketBalloonIncidentDisplayProto incident_display = 2;
+
+	enum BalloonType {
+		ROCKET = 0;
+		ROCKET_B = 1;
+	}
+}

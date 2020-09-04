@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+message AccountSettingsProto {
+	bool opt_out_social_graph_import = 1;
+	SocialSettings.ConsentStatus online_status_consent = 2;
+	SocialSettings.ConsentStatus last_played_date_consent = 3;
+}

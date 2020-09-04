@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum ArMappingTutorialPage {
+	RECORDING_TIPS = 0;
+}
