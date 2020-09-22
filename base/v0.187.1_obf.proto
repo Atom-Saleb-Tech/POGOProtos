@@ -13083,7 +13083,7 @@ message FortDeployOutProto {
 	GymStateProto gym_state_proto = 4;
 }
 
-message PlatformCurrencyQuantityProto {
+message CurrencyQuantityProto {
 	string efkjbabejfn = 1;
 	int32 ocdhchampmj = 2;
 	int32 oookdofmngg = 3;
@@ -16618,7 +16618,7 @@ message AvailableSkuProto {
 	bool can_be_purchased = 7;
 }
 
-message CurrencyQuantityProto {
+message PlatformCurrencyQuantityProto {
 	string currency_type = 1;
 	int32 quantity = 2;
 }
