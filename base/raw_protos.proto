@@ -14543,7 +14543,7 @@ message FortDeployOutProto {
 }
 
 // ref: MBDABLKLKDB
-message PlatformCurrencyQuantityProto {
+message CurrencyQuantityProto {
 	string efkjbabejfn = 1;
 	int32 ocdhchampmj = 2;
 	int32 oookdofmngg = 3;
@@ -18587,7 +18587,7 @@ message AvailableSkuProto {
 }
 
 // ref: Niantic.Platform.Iap.Protos.CurrencyQuantityProto
-message CurrencyQuantityProto {
+message PlatformCurrencyQuantityProto {
 	string currency_type = 1;
 	int32 quantity = 2;
 }
