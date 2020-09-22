@@ -7630,7 +7630,7 @@ message ChangeArTelemetry {
 
 // ref: CBJHBEHHIMH
 message GymDisplayProto {
-	repeated COHKAJAMCBL cmbmomlnhce = 1;
+	repeated GymEventProto cmbmomlnhce = 1;
 	int32 ohjcgppnhel = 2;
 	double hnbbhlmljbh = 3;
 	int32 hnplhkpjgff = 4;
@@ -8284,7 +8284,7 @@ message COAKEJJNBOG {
 }
 
 // ref: COHKAJAMCBL
-message COHKAJAMCBL {
+message GymEventProto {
 	// ref: COHKAJAMCBL/GEJEMJBJOCI/MMOKAKIAOKD
 	enum MMOKAKIAOKD {
 		UNKNOWN = 0;
@@ -10971,7 +10971,7 @@ message WallabySettingsProto {
 }
 
 // ref: GIELMNPHAPD
-message GIELMNPHAPD {
+message NewsArticleProto {
 	// ref: GIELMNPHAPD/KGNADCGLEMN/BFHJFDMKHHA
 	enum BFHJFDMKHHA {
 		UNSET = 0;
@@ -13103,7 +13103,7 @@ message JPICNIPDGLJ {
 // ref: JPJNJMHLBOP
 message ClientQuestProto {
 	QuestProto iblilgjehdh = 1;
-	POCJJMBIJKE pbiankchnhp = 2;
+	QuestDisplayProto pbiankchnhp = 2;
 }
 
 // ref: KAACJPLLGFN
@@ -14800,7 +14800,7 @@ message GameMasterField4 {
 	QuestType field2 = 2;
 	repeated PFGPOIKPJFF field3 = 3;
 	QuestProto.Context field4 = 4;
-	POCJJMBIJKE field5 = 5;
+	QuestDisplayProto field5 = 5;
 }
 
 // ref: MGDJCIFNHHB
@@ -15353,7 +15353,7 @@ message AwardedGymBadge {
 	string lndigkkjfml = 1;
 	GymBadgeType pkgelpgpohg = 2;
 	uint32 hobhbkgonlk = 3;
-	NPJIHBELHEO hibekaijkho = 4;
+	GymBadgeStats hibekaijkho = 4;
 	uint64 ggcajdfaibl = 5;
 	uint64 bdmpfipljfk = 11;
 	uint32 bgechkcgoah = 12;
@@ -15364,7 +15364,7 @@ message AwardedGymBadge {
 	string lcdegoaaeao = 17;
 	double phiabghihcc = 18;
 	double icmnhajccaa = 19;
-	PCKPDNPHCCE bilabhihdjn = 20;
+	PlayerRaidInfoProto bilabhihdjn = 20;
 }
 
 // ref: NDMMCIHLLDK
@@ -15778,7 +15778,7 @@ message NotificationSettingsProto {
 }
 
 // ref: NPJIHBELHEO
-message NPJIHBELHEO {
+message GymBadgeStats {
 	uint64 eolaajofkdj = 1;
 	uint32 hchkhnldmbh = 2;
 	uint32 kpkbmolbiki = 5;
@@ -15874,7 +15874,7 @@ message CrossGameSocialSettingsProto {
 // ref: OAPMJMAEIOH
 message TradingProto {
 	// ref: OAPMJMAEIOH/CHEGLDEHOGL/HIAAMGNMIBH
-	enum HIAAMGNMIBH {
+	enum TradingState {
 		UNSET = 0;
 		PRIMORDIAL = 1;
 		WAIT = 2;
@@ -15884,11 +15884,11 @@ message TradingProto {
 	}
 
 	// ref: OAPMJMAEIOH/CHEGLDEHOGL/CGCPLGFMECJ
-	message CGCPLGFMECJ {
+	message TradingPlayerProto {
 		// ref: OAPMJMAEIOH/CHEGLDEHOGL/CGCPLGFMECJ/FFIFJAOLNEN/AGNFDKGOGLE
-		message AGNFDKGOGLE {
+		message ExcludedPokemon {
 			// ref: OAPMJMAEIOH/CHEGLDEHOGL/CGCPLGFMECJ/FFIFJAOLNEN/AGNFDKGOGLE/ICDEBPODAOM/NHBAAHMPAKO
-			enum NHBAAHMPAKO {
+			enum ExclusionReason {
 				UNSET = 0;
 				MYTHICAL_POKEMON = 1;
 				SLASHED = 2;
@@ -15907,13 +15907,13 @@ message TradingProto {
 			}
 
 			uint64 mfkgkhdmbpb = 1;
-			NHBAAHMPAKO oikmnkppcpe = 2;
+			ExclusionReason oikmnkppcpe = 2;
 		}
 
 		string pegfachkbdd = 1;
 		PlayerPublicProfileProto jeenccbbffk = 2;
-		repeated AGNFDKGOGLE bejmgpnihjo = 3;
-		MMINGLCJNJC ohlneacoaal = 4;
+		repeated ExcludedPokemon bejmgpnihjo = 3;
+		TradingPokemonProto ohlneacoaal = 4;
 		LootProto jmklabelhpa = 5;
 		LootProto jffpmhjafhi = 6;
 		bool jdfomocafmo = 7;
@@ -15921,7 +15921,7 @@ message TradingProto {
 	}
 
 	// ref: OAPMJMAEIOH/CHEGLDEHOGL/MMINGLCJNJC
-	message MMINGLCJNJC {
+	message TradingPokemonProto {
 		uint64 mfkgkhdmbpb = 1;
 		int32 ojacddlcblo = 2;
 		int32 bekadmipkjo = 3;
@@ -15946,10 +15946,10 @@ message TradingProto {
 		int64 ppghkhaiopn = 22;
 	}
 
-	HIAAMGNMIBH jlnijhmemnj = 1;
+	TradingState jlnijhmemnj = 1;
 	uint64 hklepofbgjd = 2;
-	CGCPLGFMECJ ekinggfmndg = 3;
-	CGCPLGFMECJ hbiplhopbem = 4;
+	TradingPlayerProto ekinggfmndg = 3;
+	TradingPlayerProto hbiplhopbem = 4;
 	int64 kedajlomokb = 5;
 	string dakcmdojgah = 6;
 	FriendshipLevelDataProto kgihoibciap = 7;
@@ -16384,7 +16384,7 @@ message OMEMJPLFBLE {
 
 // ref: OMLGFCHOAJK
 message CurrentNewsProto {
-	repeated GIELMNPHAPD mikebichmmb = 1;
+	repeated NewsArticleProto mikebichmmb = 1;
 	string mnbiflmoefh = 2;
 	int64 jkieikflajk = 3;
 }
@@ -16557,7 +16557,7 @@ message PCIBILJBKMD {
 }
 
 // ref: PCKPDNPHCCE
-message PCKPDNPHCCE {
+message PlayerRaidInfoProto {
 	int32 lonpkoahoib = 3;
 	int32 ojlloeimljd = 4;
 	repeated IOKGECIIAMP bilabhihdjn = 5;
@@ -17084,13 +17084,13 @@ message PNONGDLKFAG {
 }
 
 // ref: POCJJMBIJKE
-message POCJJMBIJKE {
+message QuestDisplayProto {
 	string clgdnpihbdn = 1;
 	repeated GGDLKHNFFFL okdclnadodk = 2;
 	string lcdegoaaeao = 3;
 	string dahllofeaic = 4;
 	int32 ihfjmmjjlph = 5;
-	repeated POCJJMBIJKE pfjdidpmnpn = 6;
+	repeated QuestDisplayProto pfjdidpmnpn = 6;
 	bool nokmlangmnp = 7;
 	string hiknoonlmbe = 8;
 	string eaehaaiioac = 9;
