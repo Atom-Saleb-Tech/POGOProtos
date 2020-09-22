@@ -14260,7 +14260,7 @@ message ClientPlayerProto {
 	DailyBonusProto dfoecgbmbhn = 11;
 	EquippedBadgeProto ibdgmlchhkp = 12;
 	ContactSettingsProto aiifjelhmlm = 13;
-	repeated CurrencyQuantityProto eeiaamoemkh = 14;
+	repeated PlatformCurrencyQuantityProto eeiaamoemkh = 14;
 	int32 iepkpebbcpl = 15;
 	BuddyPokemonProto gchmnmgcogk = 16;
 	int64 ojmehflcljk = 17;
@@ -14543,7 +14543,7 @@ message FortDeployOutProto {
 }
 
 // ref: MBDABLKLKDB
-message CurrencyQuantityProto {
+message PlatformCurrencyQuantityProto {
 	string efkjbabejfn = 1;
 	int32 ocdhchampmj = 2;
 	int32 oookdofmngg = 3;
@@ -18579,8 +18579,8 @@ message UploadPoiPhotoByUrlProto {
 message AvailableSkuProto {
 	string id = 1;
 	bool is_third_party_vendor_item = 2;
-	repeated CurrencyQuantityProto price = 3;
-	repeated CurrencyQuantityProto currency_granted = 4;
+	repeated PlatformCurrencyQuantityProto price = 3;
+	repeated PlatformCurrencyQuantityProto currency_granted = 4;
 	repeated GameItemContentProto game_item_content = 5;
 	repeated SkuPresentationProto presentation_data = 6;
 	bool can_be_purchased = 7;
@@ -18617,7 +18617,7 @@ message GetAvailableSkusAndBalancesOutProto {
 
 	Status status = 1;
 	repeated AvailableSkuProto available_sku = 2;
-	repeated CurrencyQuantityProto balance = 3;
+	repeated PlatformCurrencyQuantityProto balance = 3;
 	string player_token = 4;
 }
 
