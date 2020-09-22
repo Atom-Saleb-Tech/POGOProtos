@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message RpcTimingTelemetry {
+	float hiieifaflgl = 1;
+	repeated KPDBGNGPOFO dlhoflgdgip = 2;
+}

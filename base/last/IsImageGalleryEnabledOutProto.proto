@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+message IsImageGalleryEnabledOutProto {
+	bool is_image_gallery_enabled = 1;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+package DumpProtos;
+
+message MegaEvolutionAttributes {
+	HoloTemporaryEvolutionId temporary_evolution_id = 1;
+	PokemonStatsAttributesProto field1 = 2;
+	float field2 = 3;
+	float field3 = 4;
+	HoloPokemonType field4 = 5;
+	HoloPokemonType field5 = 6;
+	float field6 = 7;
+	PokemonCameraAttributesProto field7 = 8;
+	PokemonEncounterAttributesProto field8 = 9;
+	float field9 = 10;
+	float field10 = 11;
+	repeated float field11 = 12;
+	repeated float field12 = 13;
+	repeated float field13 = 14;
+}

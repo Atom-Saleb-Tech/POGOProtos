@@ -17,4 +17,14 @@ message ArMappingSettingsProto {
 	int32 max_pending_upload_kilobytes = 13;
 	bool enable_sponsor_poi_scan = 14;
 	int32 min_disk_space_needed_mb = 15;
+	bool field1 = 16;
+	float field2 = 17;
+	float field3 = 18;
+	float field4 = 19;
+	float field5 = 20;
+	float field6 = 21;
+	float field7 = 22;
+	float field8 = 23;
+	float field9 = 24;
+	float field10 = 25;
 }

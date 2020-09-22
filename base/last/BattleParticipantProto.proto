@@ -14,4 +14,7 @@ message BattleParticipantProto {
 	repeated string friend_codename = 10;
 	bool is_remote = 11;
 	bool is_social_invite = 12;
+	bool field1 = 13;
+	int64 field2 = 14;
+	int32 field3 = 15;
 }

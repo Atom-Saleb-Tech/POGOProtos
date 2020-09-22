@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+message GetImagesForPoiProto {
+	string poi_id = 1;
+}

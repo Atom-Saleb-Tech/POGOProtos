@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message MegaEvoleSpeciesProto {
+	int32 keeolgndmfd = 1;
+	int32 ifhlcjbnopa = 2;
+}

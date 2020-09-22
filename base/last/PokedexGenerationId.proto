@@ -11,4 +11,6 @@ enum PokedexGenerationId {
 	GEN7 = 6;
 	GEN8 = 7;
 	MELTAN = 1001;
+	MEGAEVO = 1002;
+	ALL = 5001;
 }

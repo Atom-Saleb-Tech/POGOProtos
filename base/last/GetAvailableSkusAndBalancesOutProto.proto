@@ -4,7 +4,7 @@ package DumpProtos;
 message GetAvailableSkusAndBalancesOutProto {
 	Status status = 1;
 	repeated AvailableSkuProto available_sku = 2;
-	repeated CurrencyQuantityProto balance = 3;
+	repeated PlatformCurrencyQuantityProto balance = 3;
 	string player_token = 4;
 
 	enum Status {

@@ -56,5 +56,9 @@ message GlobalSettingsProto {
 	RaidTicketSettingsProto raid_ticket_settings = 55;
 	RocketBalloonGlobalSettingsProto rocket_balloon_settings = 56;
 	TimedGroupChallengeSettingsProto timed_group_challenge_settings = 57;
+	NewGlobalSettingsField1Proto field1 = 58;
 	LobbyClientSettingsProto lobby_client_settings = 59;
+	NewGlobalSettingsField2Proto field2 = 61;
+	NewGlobalSettingsField3Proto field3 = 62;
+	NewGlobalSettingsField4Proto field4 = 64;
 }

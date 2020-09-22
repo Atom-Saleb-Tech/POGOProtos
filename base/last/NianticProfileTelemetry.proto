@@ -1,0 +1,12 @@
+syntax = "proto3";
+package DumpProtos;
+
+message NianticProfileTelemetry {
+	EEDFJAHCEFC bdmhhofomlf = 1;
+
+	enum EEDFJAHCEFC {
+		UNDEFINED = 0;
+		OPEN_MY_PROFILE = 1;
+		OPEN_FRIEND_PROFILE = 2;
+	}
+}

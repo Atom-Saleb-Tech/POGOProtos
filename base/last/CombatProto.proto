@@ -42,6 +42,8 @@ message CombatProto {
 		int32 minigame_defense_chances_left = 10;
 		string combat_npc_personality_id = 11;
 		int32 times_combat_actions_called = 12;
+		int64 field1 = 13;
+		int32 field2 = 14;
 	}
 
 	message CombatPokemonProto {

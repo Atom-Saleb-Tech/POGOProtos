@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+message GameMasterField6 {
+	bool field1 = 1;
+}

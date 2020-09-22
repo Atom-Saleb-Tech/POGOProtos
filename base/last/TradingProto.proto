@@ -38,6 +38,7 @@ message TradingProto {
 				PLAYER_CANNOT_AFFORD = 11;
 				PLAYER_REACHED_DAILY_LIMIT = 12;
 				FAVORITE = 13;
+				TEMP_EVOLVED = 14;
 			}
 
 			fixed64 pokemon_id = 1;

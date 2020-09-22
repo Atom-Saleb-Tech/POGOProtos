@@ -1,0 +1,9 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum FeatureType {
+	UNSET = 0;
+	ONLINE_STATUS = 1;
+	NIANTIC_PROFILE = 2;
+	FRIENDS_LIST = 3;
+}

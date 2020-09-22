@@ -2,13 +2,12 @@ syntax = "proto3";
 package DumpProtos;
 
 message InventoryItemProto {
-	int64 modified_timestamp = 1;
-	bytes deleted_item_key = 2;
-	bytes item = 3;
-
 	//oneof InventoryItem {
 		//none = 0;
 		//deleted_item_key = 2;
 		//item = 3;
 	//}
+	int64 modified_timestamp = 1;
+	HoloInventoryKeyProto deleted_item_key = 2;
+	HoloInventoryItemProto item = 3;
 }

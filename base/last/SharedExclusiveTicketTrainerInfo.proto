@@ -2,6 +2,17 @@ syntax = "proto3";
 package DumpProtos;
 
 message SharedExclusiveTicketTrainerInfo {
-	string codename = 1;
-	string player_id = 2;
+	int64 pdaldoafaaj = 1;
+	string lndigkkjfml = 2;
+	int64 liggmklanog = 4;
+	int64 hejngmkeobl = 5;
+	string ipfnaapigeh = 6;
+	double phiabghihcc = 7;
+	double icmnhajccaa = 8;
+	string mghkaalhkoo = 9;
+	int64 kdllpajbffo = 10;
+	bool gigmimkmdep = 11;
+	PokemonProto jmobphmmoef = 12;
+	DJLDMHBHCFG idjplgfpimf = 13;
+	DJLDMHBHCFG bejppidpieg = 14;
 }

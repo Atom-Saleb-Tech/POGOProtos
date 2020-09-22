@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum MetricType {
+	METRIC_KM = 0;
+	METRIC_STEP = 1;
+}

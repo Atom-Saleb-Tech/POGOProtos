@@ -7,8 +7,8 @@ message PokemonProto {
 	int32 cp = 3;
 	int32 stamina = 4;
 	int32 max_stamina = 5;
-	int32 move1 = 6;
-	int32 move2 = 7;
+	HoloPokemonMove move1 = 6;
+	HoloPokemonMove move2 = 7;
 	string deployed_fort_id = 8;
 	string owner_name = 9;
 	bool is_egg = 10;
@@ -47,7 +47,7 @@ message PokemonProto {
 	string original_owner_nickname = 44;
 	int64 traded_time_ms = 45;
 	bool is_lucky = 46;
-	int32 move3 = 47;
+	HoloPokemonMove move3 = 47;
 	PokemonCombatStatsProto pvp_combat_stats = 48;
 	PokemonCombatStatsProto npc_combat_stats = 49;
 	bool move2_is_purified_exclusive = 50;
@@ -56,6 +56,12 @@ message PokemonProto {
 	float pre_boosted_additional_cp_multiplier = 53;
 	double deployed_gym_lat_degree = 55;
 	double deployed_gym_lng_degree = 56;
+	bool has_mega_evolved = 57;
 	HoloPokemonEggType egg_type = 58;
-	repeated ClientQuestProto quest_buddy_evolution_requirement = 62;
+	int32 temp_evo_cp = 59;
+	float temp_evo_stamina_modifier = 60;
+	float temp_evo_cp_multiplier = 61;
+	repeated HoloTemporaryEvolutionId mega_evolved_forms = 63;
+	repeated PokemonField1 field1 = 64;
+	PokemonCreateDetail origin_detail = 66;
 }

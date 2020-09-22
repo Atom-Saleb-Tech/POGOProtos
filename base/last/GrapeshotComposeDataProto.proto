@@ -4,4 +4,5 @@ package DumpProtos;
 message GrapeshotComposeDataProto {
 	string target_file_path = 1;
 	GrapeshotAuthenticationDataProto authentication = 2;
+	string hash = 3;
 }

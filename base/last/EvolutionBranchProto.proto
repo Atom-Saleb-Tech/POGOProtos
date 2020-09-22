@@ -14,5 +14,8 @@ message EvolutionBranchProto {
 	bool only_nighttime = 11;
 	int32 priority = 12;
 	bool no_candy_cost_via_trade = 13;
-	repeated string quest_requirement_template_id = 17;
+	HoloTemporaryEvolutionId temporary_evolution_id = 14;
+	int32 field1 = 15;
+	int32 field2 = 16;
+	repeated PokemonField1Sub field3 = 17;
 }

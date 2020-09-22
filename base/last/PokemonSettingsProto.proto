@@ -51,6 +51,7 @@ message PokemonSettingsProto {
 	int32 additional_cp_boost_level = 48;
 	repeated HoloPokemonMove elite_quick_move = 49;
 	repeated HoloPokemonMove elite_cinematic_move = 50;
+	repeated MegaEvolutionAttributes temporary_evolution = 51;
 
 	enum BuddySize {
 		BUDDY_MEDIUM = 0;

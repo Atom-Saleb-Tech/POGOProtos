@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+message NewGlobalSettingsField1Proto {
+	bool field1 = 1;
+}
