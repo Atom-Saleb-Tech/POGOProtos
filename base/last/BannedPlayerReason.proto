@@ -1,9 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-enum BannedPlayerReason {
-	BANNED = 0;
-	UNAUTHORIZED_DEVICE = 1;
-	SUSPENDED = 2;
-	RESTRICTION_VIOLATION = 3;
-}

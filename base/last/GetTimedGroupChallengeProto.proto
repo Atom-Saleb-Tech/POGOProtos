@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message GetTimedGroupChallengeProto {
-	string challenge_id = 1;
-	string active_city_hash = 2;
-}

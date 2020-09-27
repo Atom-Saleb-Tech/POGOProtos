@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message GetClientFeatureFlagsResponse {
-	SocialClientFeatures feature_flags = 1;
-	SocialClientGlobalSettings global_settings = 2;
-}

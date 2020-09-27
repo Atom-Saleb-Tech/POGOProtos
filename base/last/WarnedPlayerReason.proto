@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-enum WarnedPlayerReason {
-	CHEAT_WARNING = 0;
-	POST_SUSPENSION_WARNING = 1;
-}

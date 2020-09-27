@@ -1,6 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message GmmSettings {
-	repeated LayerRule layer_rules = 1;
-}

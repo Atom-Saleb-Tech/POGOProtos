@@ -1,6 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message LobbyClientSettingsProto {
-	int64 lobby_refresh_interval_ms = 1;
-}

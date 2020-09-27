@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-enum ExitVfxContext {
-	NORMAL = 0;
-	VICTORY = 1;
-}

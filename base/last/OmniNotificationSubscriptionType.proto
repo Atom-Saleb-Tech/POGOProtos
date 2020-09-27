@@ -1,8 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-enum OmniNotificationSubscriptionType {
-	OPTED_IN = 0;
-	SUBSCRIBED = 1;
-	UNSUBSCRIBED = 2;
-}

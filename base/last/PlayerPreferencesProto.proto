@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message PlayerPreferencesProto {
-	bool opt_out_of_sponsored_gifts = 1;
-	JHBNFHCIJDK kcmjmjighpb = 2;
-}

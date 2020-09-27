@@ -1,6 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message SavePlayerPreferencesProto {
-	PlayerPreferencesProto player_preferences_proto = 1;
-}

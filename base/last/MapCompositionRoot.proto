@@ -1,8 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message MapCompositionRoot {
-	repeated MapArea map_area = 1;
-	repeated MapProvider map_provider = 2;
-	repeated NamedMapSettings named_map_settings = 3;
-}

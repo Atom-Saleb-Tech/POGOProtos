@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message NamedMapSettings {
-	string name = 1;
-	GmmSettings gmm_settings = 2;
-}

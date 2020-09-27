@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message GroupChallengeCriteriaProto {
-	QuestType challenge_type = 1;
-	QuestGoalProto challenge_goal = 2;
-}

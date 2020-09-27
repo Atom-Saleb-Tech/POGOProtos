@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message MapTileDataProto {
-	MapTileProto map_tile = 1;
-	MapCompositionRoot tile_data = 2;
-}

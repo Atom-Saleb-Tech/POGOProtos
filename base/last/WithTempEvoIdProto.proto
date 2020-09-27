@@ -1,6 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message WithTempEvoIdProto {
-	repeated HoloTemporaryEvolutionId mega_form = 1;
-}

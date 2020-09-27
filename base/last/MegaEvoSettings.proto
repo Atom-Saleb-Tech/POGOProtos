@@ -1,9 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message MegaEvoSettings {
-	int64 ob_mega_evolve_duration_ms = 1;
-	float ob_mega_boost = 2;
-	float ob_mega_same_type_boost = 3;
-	int32 ob_mega_max_candy = 4;
-}

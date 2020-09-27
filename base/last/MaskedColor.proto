@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message MaskedColor {
-	uint32 color_argb = 1;
-	uint32 color_mask_argb = 2;
-}

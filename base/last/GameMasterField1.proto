@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message GameMasterField1 {
-	HoloPokemonId pokemon_id = 1;
-	repeated MegaEvosField1 evolutions = 2;
-}

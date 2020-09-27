@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-enum GuiTransitionType {
-	IN = 0;
-	OUT = 1;
-}

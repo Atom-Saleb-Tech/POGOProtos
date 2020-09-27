@@ -1,6 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message RaidTicketSettingsProto {
-	bool consume_raid_ticket_upon_battle_start = 1;
-}

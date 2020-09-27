@@ -1,9 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message GameMasterField5 {
-	bool field1 = 1;
-	bool field2 = 2;
-	bool field3 = 3;
-	bool field4 = 4;
-}

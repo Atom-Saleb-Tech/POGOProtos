@@ -1,9 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message PokemonField1 {
-	QuestProto quest = 1;
-	PokemonField1Sub field1 = 2;
-	HoloPokemonId pokemon_id = 3;
-	PokemonDisplayProto.Form form = 4;
-}

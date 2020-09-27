@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message TimedGroupChallengeSectionProto {
-	string challenge_id = 1;
-	string header_image_url = 2;
-}

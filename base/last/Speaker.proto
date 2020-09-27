@@ -1,9 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-enum Speaker {
-	PROF = 0;
-	BLUE_LEADER = 1;
-	RED_LEADER = 2;
-	YELLOW_LEADER = 3;
-}

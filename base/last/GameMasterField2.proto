@@ -1,8 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message GameMasterField2 {
-	bool field1 = 1;
-	int32 field2 = 2;
-	int32 field3 = 3;
-}
