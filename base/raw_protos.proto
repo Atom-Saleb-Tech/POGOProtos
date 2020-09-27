@@ -2512,7 +2512,7 @@ message PurchaseSkuProto {
 }
 
 // ref: Niantic.Platform.Iap.Protos.RedeemSamsungReceiptOutProto
-message PlatformRedeemSamsungReceiptOutProto {
+message RedeemSamsungReceiptOutProto {
 	// ref: Niantic.Platform.Iap.Protos.RedeemSamsungReceiptOutProto/Types/Status
 	enum Status {
 		UNSET = 0;
@@ -2524,7 +2524,7 @@ message PlatformRedeemSamsungReceiptOutProto {
 }
 
 // ref: Niantic.Platform.Iap.Protos.RedeemSamsungReceiptProto
-message PlatformRedeemSamsungReceiptProto {
+message RedeemSamsungReceiptProto {
 	string purchase_data = 1;
 	string purchase_id = 2;
 	string purchase_currency = 3;
@@ -2532,7 +2532,7 @@ message PlatformRedeemSamsungReceiptProto {
 }
 
 // ref: Niantic.Platform.Iap.Protos.RedeemGoogleReceiptOutProto
-message PlatformRedeemGoogleReceiptOutProto {
+message RedeemGoogleReceiptOutProto {
 	// ref: Niantic.Platform.Iap.Protos.RedeemGoogleReceiptOutProto/Types/Status
 	enum Status {
 		UNSET = 0;
@@ -2544,7 +2544,7 @@ message PlatformRedeemGoogleReceiptOutProto {
 }
 
 // ref: Niantic.Platform.Iap.Protos.RedeemGoogleReceiptOutProto
-message PlatformRedeemGoogleReceiptProto {
+message RedeemGoogleReceiptProto {
 	string receipt = 1;
 	string receipt_signature = 2;
 	string purchase_currency = 3;
