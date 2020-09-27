@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum NotificationState {
+	PLATFORM_NOTIFICATION_STATE_UNSET_STATE = 0;
+	PLATFORM_NOTIFICATION_STATE_VIEWED = 1;
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformPlayerSettingsProto {
+	bool opt_out_online_status = 1;
+	repeated PlatformSocialSettings.TutorialType completed_tutorials = 2;
+}

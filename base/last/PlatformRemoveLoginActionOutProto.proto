@@ -1,0 +1,13 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformRemoveLoginActionOutProto {
+	bool success = 1;
+	repeated PlatformLoginDetail login_detail = 2;
+	Status status = 3;
+
+	enum Status {
+		UNSET = 0;
+		LOGIN_NOT_REMOVABLE = 1;
+	}
+}

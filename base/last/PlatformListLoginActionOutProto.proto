@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformListLoginActionOutProto {
+	bool success = 1;
+	repeated PlatformLoginDetail login_detail = 2;
+}

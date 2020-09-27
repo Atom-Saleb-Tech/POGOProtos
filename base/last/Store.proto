@@ -1,0 +1,9 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum Store {
+	STORE_STORE_UNSET = 0;
+	STORE_STORE_APPLE = 1;
+	STORE_STORE_GOOGLE = 2;
+	STORE_STORE_SAMSUNG = 3;
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformSkuPresentationProto {
+	string key = 1;
+	string value = 2;
+}

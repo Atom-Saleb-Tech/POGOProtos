@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformAddLoginActionProto {
+	IdentityProvider identity_provider = 1;
+	bytes inner_message = 2;
+	string auth_provider_id = 3;
+}

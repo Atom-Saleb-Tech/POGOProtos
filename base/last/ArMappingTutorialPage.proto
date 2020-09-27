@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum ArMappingTutorialPage {
+	TITAN_AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS = 0;
+}

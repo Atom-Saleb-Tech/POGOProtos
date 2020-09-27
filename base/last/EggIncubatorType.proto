@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum EggIncubatorType {
+	EGG_INCUBATOR_TYPE_INCUBATOR_UNSET = 0;
+	EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE = 1;
+}

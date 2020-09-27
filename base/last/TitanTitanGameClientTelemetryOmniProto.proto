@@ -1,0 +1,12 @@
+syntax = "proto3";
+package DumpProtos;
+
+message TitanTitanGameClientTelemetryOmniProto {
+	PlatformPlatformServerData server_data = 1001;
+
+	oneof TelemetryData {
+		TitanPoiSubmissionTelemetry poi_submission_telemetry = 1;
+		TitanPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;
+		TitanPoiPlayerMetadataTelemetry player_metadata_telemetry = 3;
+	}
+}

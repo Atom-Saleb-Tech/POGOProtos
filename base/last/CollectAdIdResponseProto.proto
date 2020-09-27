@@ -1,0 +1,12 @@
+syntax = "proto3";
+package DumpProtos;
+
+message CollectAdIdResponseProto {
+	Status status = 1;
+
+	enum Status {
+		INVALID = 0;
+		SUCCESS = 1;
+		ERROR = 2;
+	}
+}

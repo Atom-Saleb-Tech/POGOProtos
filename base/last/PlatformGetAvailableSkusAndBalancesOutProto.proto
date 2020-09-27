@@ -1,0 +1,15 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformGetAvailableSkusAndBalancesOutProto {
+	Status status = 1;
+	repeated PlatformAvailableSkuProto available_sku = 2;
+	repeated PlatformCurrencyQuantityProto balance = 3;
+	string player_token = 4;
+
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		FAILURE = 2;
+	}
+}

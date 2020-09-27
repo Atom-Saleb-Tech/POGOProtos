@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformClientGameMasterTemplateProto {
+	string template_id = 1;
+	GameMasterClientTemplateProto data = 2;
+}

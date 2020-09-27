@@ -1,0 +1,13 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformGetIncomingFriendInvitesOutProto {
+	Result result = 1;
+	repeated PlatformIncomingFriendInviteDisplayProto invites = 2;
+
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR_UNKNOWN = 2;
+	}
+}

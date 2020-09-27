@@ -1,0 +1,11 @@
+syntax = "proto3";
+package DumpProtos;
+
+message ClientIncidentStepProto {
+
+	oneof ClientIncidentStep {
+		ClientInvasionBattleStepProto invasion_battle = 1;
+		ClientInvasionEncounterStepProto invasion_encounter = 2;
+		ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;
+	}
+}

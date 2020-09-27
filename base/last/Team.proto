@@ -1,0 +1,9 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum Team {
+	TEAM_UNSET = 0;
+	TEAM_TEAM_BLUE = 1;
+	TEAM_TEAM_RED = 2;
+	TEAM_TEAM_YELLOW = 3;
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum FortType {
+	FORT_TYPE_GYM = 0;
+	FORT_TYPE_CHECKPOINT = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+package DumpProtos;
+
+message WithThrowTypeProto {
+
+	oneof Throw {
+		HoloActivityType throw_type = 1;
+		bool hit = 2;
+	}
+}

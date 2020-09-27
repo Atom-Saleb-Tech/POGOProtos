@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message TitanSubmitPoiLocationUpdateProto {
+	string poi_id = 1;
+	PlatformLocationE6Proto location = 2;
+}

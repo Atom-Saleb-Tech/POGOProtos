@@ -1,0 +1,16 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformApprovedCommonTelemetryProto {
+	PlatformServerRecordMetadata server_data = 7;
+	PlatformClientTelemetryCommonFilterProto common_filters = 8;
+
+	oneof TelemetryData {
+		PlatformCommonTelemetryBootTime boot_time = 1;
+		PlatformCommonTelemetryShopClick shop_click = 2;
+		PlatformCommonTelemetryShopView shop_view = 3;
+		PlatformPoiSubmissionTelemetry poi_submission_telemetry = 4;
+		PlatformPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;
+		PlatformCommonTelemetryLogIn log_in = 6;
+	}
+}

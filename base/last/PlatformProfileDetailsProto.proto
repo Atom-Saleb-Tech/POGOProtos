@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformProfileDetailsProto {
+	string profile_name_app_key = 1;
+	string nickname = 2;
+}

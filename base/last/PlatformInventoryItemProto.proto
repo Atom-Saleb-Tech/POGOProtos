@@ -1,0 +1,11 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformInventoryItemProto {
+	int64 modified_timestamp = 1;
+
+	oneof InventoryItem {
+		HoloInventoryKeyProto deleted_item_key = 2;
+		HoloInventoryItemProto item = 3;
+	}
+}

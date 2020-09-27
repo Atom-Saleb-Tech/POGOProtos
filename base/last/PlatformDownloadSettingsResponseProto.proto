@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformDownloadSettingsResponseProto {
+	string error = 1;
+	string sha1 = 2;
+	GlobalSettingsProto values = 3;
+}

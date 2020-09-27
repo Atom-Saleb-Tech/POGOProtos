@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformDeveloperToken {
+	string id_token = 1;
+	string owner_email = 2;
+}

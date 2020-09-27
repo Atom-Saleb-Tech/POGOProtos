@@ -1,0 +1,17 @@
+syntax = "proto3";
+package DumpProtos;
+
+message LootItemProto {
+	int32 count = 5;
+
+	oneof Type {
+		Item item = 1;
+		bool stardust = 2;
+		bool pokecoin = 3;
+		HoloPokemonId pokemon_candy = 4;
+		bool experience = 6;
+		PokemonProto pokemon_egg = 7;
+		string avatar_template_id = 8;
+		string sticker_id = 9;
+	}
+}

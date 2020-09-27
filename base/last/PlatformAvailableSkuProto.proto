@@ -1,0 +1,12 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformAvailableSkuProto {
+	string id = 1;
+	bool is_third_party_vendor_item = 2;
+	repeated PlatformCurrencyQuantityProto price = 3;
+	repeated PlatformCurrencyQuantityProto currency_granted = 4;
+	repeated PlatformGameItemContentProto game_item_content = 5;
+	repeated PlatformSkuPresentationProto presentation_data = 6;
+	bool can_be_purchased = 7;
+}

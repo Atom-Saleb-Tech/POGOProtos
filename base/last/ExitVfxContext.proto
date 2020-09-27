@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum ExitVfxContext {
+	EXIT_VFX_CONTEXT_NORMAL = 0;
+	EXIT_VFX_CONTEXT_VICTORY = 1;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformSocialProto {
+
+	enum AppKey {
+		INVALID = 0;
+		INGRESS_DELETED = 1;
+		HOLOHOLO_DELETED = 2;
+		LEXICON_DELETED = 3;
+	}
+}

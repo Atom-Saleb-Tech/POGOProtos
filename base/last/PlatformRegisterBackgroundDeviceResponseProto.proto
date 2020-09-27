@@ -1,0 +1,13 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformRegisterBackgroundDeviceResponseProto {
+	Status status = 1;
+	PlatformBackgroundToken token = 2;
+
+	enum Status {
+		UNSET = 0;
+		SUCCESS = 1;
+		ERROR = 2;
+	}
+}

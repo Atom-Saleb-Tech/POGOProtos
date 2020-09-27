@@ -1,0 +1,9 @@
+syntax = "proto3";
+package DumpProtos;
+
+message TitanGrapeshotUploadingDataProto {
+	repeated TitanGrapeshotChunkDataProto chunk_data = 1;
+	TitanGrapeshotComposeDataProto compose_data = 2;
+	string gcs_bucket = 3;
+	int32 number_of_chunks = 4;
+}

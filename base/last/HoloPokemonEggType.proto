@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum HoloPokemonEggType {
+	HOLO_POKEMON_EGG_TYPE_EGG_TYPE_UNSET = 0;
+	HOLO_POKEMON_EGG_TYPE_EGG_TYPE_SHADOW = 1;
+}
