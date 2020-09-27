@@ -6952,7 +6952,7 @@ message GetFriendshipRewardsOutProto {
 	string dpnibkogejm = 3;
 }
 
-message RpcTimingTelemetry {
+message RpcResponseTelemetry {
 	float hiieifaflgl = 1;
 	repeated KPDBGNGPOFO dlhoflgdgip = 2;
 }
@@ -10082,7 +10082,7 @@ message GJFHOGOMIAF {
 	string dgclkiefgef = 4;
 }
 
-message BuddyMultiplayerTimeToGetSessionTelemetry {
+message BuddyMultiplayerTimeToGetSessionProto {
 	int32 nenieieiffk = 1;
 	int64 phmnofmefpb = 2;
 }
@@ -10488,7 +10488,7 @@ message HGNDHMPOHIC {
 	repeated LootItemProto nldndpcfdmh = 8;
 }
 
-message UserAttributes {
+message UserAttributesProto {
 	int32 gkpnheenjoj = 1;
 	int64 migdmlncfkd = 2;
 	int64 pphbggdaelb = 3;
@@ -11969,17 +11969,17 @@ message HoloholoClientTelemetryOmniProto {
 		SocialTelemetry social_telemetry = 29;
 		CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;
 		PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;
-		RpcTimingTelemetry rpc_timing_telemetry = 32;
+		RpcResponseTelemetry rpc_timing_telemetry = 32;
 		SocialGiftCountTelemetry social_gift_count_telemetry = 33;
 		AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;
 		AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;
 		AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;
 		AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;
-		RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;
+		RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;
 		PermissionsFlowTelemetry permissions_flow = 39;
 		DeviceServiceToggleTelemetry device_service_toggle = 40;
 		BootTelemetry boot_telemetry = 41;
-		UserAttributes user_attributes = 42;
+		UserAttributesProto user_attributes = 42;
 		OnboardingTelemetry onboarding_telemetry = 43;
 		LoginActionTelemetry login_action_telemetry = 44;
 		ArPhotoSessionProto ar_photo_session_telemetry = 45;
@@ -11994,12 +11994,12 @@ message HoloholoClientTelemetryOmniProto {
 		DeviceSpecificationsTelemetry device_specifications_telemetry = 54;
 		ScreenResolutionTelemetry screen_resolution_telemetry = 55;
 		ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;
-		BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;
-		BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;
-		BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;
+		BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;
+		BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;
+		BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;
 		PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;
 		MonodepthDownloadTelemetry monodepth_download_telemetry = 61;
-		ArMappingTelemetry ar_mapping_telemetry = 62;
+		ArMappingTelemetryProto ar_mapping_telemetry = 62;
 		RemoteRaidTelemetry remote_raid_telemetry = 63;
 		DeviceOSTelemetry device_os_telemetry = 64;
 		NianticProfileTelemetry niantic_profile_telemetry = 65;
@@ -12964,7 +12964,7 @@ message LNGNLGBMPAG {
 	int32 cebfafgmdhp = 2;
 }
 
-message BuddyMultiplayerConnectionSucceededTelemetry {
+message BuddyMultiplayerConnectionSucceededProto {
 	int32 nenieieiffk = 1;
 	int64 ljhmgpcaoil = 2;
 }
@@ -13906,7 +13906,7 @@ message NEODGFMEIIK {
 	string jkgpgghegjl = 8;
 }
 
-message BuddyMultiplayerConnectionFailedTelemetry {
+message BuddyMultiplayerConnectionFailedProto {
 	int32 nenieieiffk = 1;
 	int64 ljhmgpcaoil = 2;
 }
@@ -14067,7 +14067,7 @@ message PokemonInventoryTelemetry {
 	string lhjpgpjpgpd = 2;
 }
 
-message ArMappingTelemetry {
+message ArMappingTelemetryProto {
 	enum BGINAFFACFI {
 		UNKNOWN_ENTRY = 0;
 		POI_EDIT_MENU = 1;
@@ -14177,7 +14177,7 @@ message NOGKCBLADHN {
 	repeated uint64 jnojmednlil = 5;
 }
 
-message RpcSocketTimingTelemetry {
+message RpcSocketResponseTelemetry {
 	float hiieifaflgl = 1;
 	repeated ADMNBAJPPPC dlhoflgdgip = 2;
 }
