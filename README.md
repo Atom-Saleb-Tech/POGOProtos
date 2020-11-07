@@ -8,7 +8,7 @@ POGOProtos [![Build Status](https://travis-ci.org/Furtif/POGOProtos.svg?branch=m
 
 This repository contains the [ProtoBuf](https://github.com/google/protobuf) `.proto` files needed to decode the PokémonGo RPC.
 
-### ![alt text][1.1] NOTE: All content of folder ```./src/*``` except the ```./src/Rpc``` folder is deprecated ![alt text][1.1]
+### ![alt text][1.1] NOTE: All content of folder ```./src/*``` except the ```./src/Rpc``` ``(obfuscated)`` folder is deprecated ![alt text][1.1]
 
  * **Recommend using the base [Rpc](https://github.com/Furtif/POGOProtos/blob/master/src/POGOProtos/Rpc/Rpc.proto)**
  * **NOTE:** (__*old ```compile.py``` has a new name: ```compile_src.py```*__) works but uses ```POGOProtos.Rpc.*```
@@ -16,10 +16,12 @@ This repository contains the [ProtoBuf](https://github.com/google/protobuf) `.pr
 ### Versioning
 We are following [semantic versioning](http://semver.org/) for POGOProtos.  Every version will be mapped to their current PokémonGo version.
 
-| Version      | Base                                                                                        | Notes                  | Extra                           |
-|--------------|---------------------------------------------------------------------------------------------|------------------------|---------------------------------|
-| 2.52.7       |  [v0.187.1](https://github.com/Furtif/POGOProtos/blob/master/base/v0.187.1_obf.proto)       | Semi DeObfuscated      |  Protocol Buffers v3.13.0       |
-| 2.52.2       |  [v0.181.0](https://github.com/Furtif/POGOProtos/blob/master/base/v0.181.0.proto)           | Compatible             |  Protocol Buffers v3.13.0       |
+| Version      | Base                                                                                                      | Notes                  | Extra                           |
+|--------------|-----------------------------------------------------------------------------------------------------------|------------------------|---------------------------------|
+| 2.53.0       |  [v0.191.2](https://github.com/Furtif/POGOProtos/blob/master/base/v0.191.2.proto)                         | Compatible |  This version cant not uses base/raw* but uses base/v0.191.2.proto      |
+| 2.52.9       |  [v0.191.0](https://github.com/Furtif/POGOProtos/blob/master/base/v0.191.0_obf.proto)                     | Obfuscated (auto clean test) |  Protocol Buffers v3.13.0       |
+| 2.52.7       |  [v0.187.x](https://github.com/Furtif/POGOProtos/blob/master/base/v0.187.1_semi_deobfuscated.proto)       | 3/4 cleanned    |  Protocol Buffers v3.13.0       |
+| 2.52.2       |  [v0.181.0 __* ( or ``base.proto``) *__ ](https://github.com/Furtif/POGOProtos/blob/master/base/base.proto)         | Compatible             |  Protocol Buffers v3.13.0       |
 
 ### Usage
 If you want to figure out the current version in an automated system, use this file.
