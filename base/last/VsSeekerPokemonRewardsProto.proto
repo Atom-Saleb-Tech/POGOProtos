@@ -5,14 +5,6 @@ message VsSeekerPokemonRewardsProto {
 	repeated PokemonUnlockProto available_pokemon = 1;
 	VsSeekerRewardTrack reward_track = 2;
 
-	message OverrideIvRangeProto {
-		oneof OverrideType {
-			RangeProto range = 1;
-			bool zero = 2;
-		}
-
-	}
-
 	message PokemonUnlockProto {
 		oneof RewardType {
 			PokemonEncounterRewardProto pokemon = 1;
@@ -25,5 +17,13 @@ message VsSeekerPokemonRewardsProto {
 		OverrideIvRangeProto attack_iv_override = 6;
 		OverrideIvRangeProto defense_iv_override = 7;
 		OverrideIvRangeProto stamina_iv_override = 8;
+	}
+
+	message OverrideIvRangeProto {
+		oneof OverrideType {
+			RangeProto range = 1;
+			bool zero = 2;
+		}
+
 	}
 }

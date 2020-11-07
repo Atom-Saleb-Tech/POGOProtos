@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+message IsSkuAvailableOutProto {
+	bool is_sku_available = 1;
+}

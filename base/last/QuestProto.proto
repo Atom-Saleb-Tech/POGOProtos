@@ -3,6 +3,7 @@ package DumpProtos;
 
 message QuestProto {
 	QuestType quest_type = 1;
+	WithSingleDayProto with_single_day = 98;
 	DaysWithARowQuestProto days_in_arow = 99;
 	string quest_id = 100;
 	int64 quest_seed = 101;
@@ -14,7 +15,7 @@ message QuestProto {
 	repeated QuestRewardProto quest_rewards = 107;
 	int64 creation_timestamp_ms = 108;
 	int64 last_update_timestamp_ms = 109;
-	int64 compeletion_timestamp_ms = 110;
+	int64 completion_timestamp_ms = 110;
 	string fort_id = 111;
 	bool admin_generated = 112;
 	bool stamp_count_override_enabled = 113;
@@ -24,14 +25,12 @@ message QuestProto {
 	DailyCounterProto daily_counter = 117;
 	string reward_pokemon_icon_url = 118;
 	int64 end_timestamp_ms = 119;
+	bool is_bonus_challenge = 120;
 
-	enum Context {
-		UNSET = 0;
-		STORY_QUEST = 1;
-		CHALLENGE_QUEST = 2;
-		DAILY_COIN_QUEST = 3;
-		TIMED_STORY_QUEST = 4;
-		TGC_TRACKING_QUEST = 7;
+	enum Status {
+		STATUS_UNDEFINED = 0;
+		STATUS_ACTIVE = 1;
+		STATUS_COMPLETED = 2;
 	}
 
 	oneof Quest {
@@ -43,11 +42,20 @@ message QuestProto {
 		DailyBuddyAffectionQuestProto daily_buddy_affection = 7;
 		QuestWalkProto quest_walk = 8;
 		EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;
+		GetStardustQuestProto get_stardust = 10;
+		GeotargetedQuestProto geotargeted_quest = 12;
+		BuddyEvolutionWalkQuestProto buddy_evolution_walk = 13;
 	}
 
-	enum Status {
-		STATUS_UNDEFINED = 0;
-		STATUS_ACTIVE = 1;
-		STATUS_COMPLETED = 2;
+	enum Context {
+		UNSET = 0;
+		STORY_QUEST = 1;
+		CHALLENGE_QUEST = 2;
+		DAILY_COIN_QUEST = 3;
+		TIMED_STORY_QUEST = 4;
+		NON_NARRATIVE_STORY_QUEST = 5;
+		LEVEL_UP_QUEST = 6;
+		TGC_TRACKING_QUEST = 7;
+		EVOLUTION_QUEST = 8;
 	}
 }

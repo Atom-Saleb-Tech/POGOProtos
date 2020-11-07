@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformLabelContent {
+	repeated PlatformLabelContentLocalization localizations = 1;
+}

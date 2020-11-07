@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message CreatePokemonTagProto {
+	string name = 1;
+	PokemonTagColor color = 2;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformLabel {
+	int32 priority = 1;
+	PlatformLabelGeometry geometry = 2;
+	PlatformLabelContent content = 3;
+}

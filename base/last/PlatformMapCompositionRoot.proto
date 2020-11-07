@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformMapCompositionRoot {
+	repeated PlatformMapArea map_area = 1;
+	repeated PlatformMapProvider map_provider = 2;
+	repeated PlatformNamedMapSettings named_map_settings = 3;
+}

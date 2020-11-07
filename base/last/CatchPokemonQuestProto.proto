@@ -3,4 +3,5 @@ package DumpProtos;
 
 message CatchPokemonQuestProto {
 	repeated HoloPokemonId unique_pokemon_id = 1;
+	fixed64 active_encounter_id = 2;
 }

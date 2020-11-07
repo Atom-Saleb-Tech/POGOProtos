@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+enum GuiTransitionType {
+	PLATFORM_GUI_TRANSITION_TYPE_IN = 0;
+	PLATFORM_GUI_TRANSITION_TYPE_OUT = 1;
+}

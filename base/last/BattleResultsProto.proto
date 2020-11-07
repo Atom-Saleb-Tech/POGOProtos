@@ -13,4 +13,5 @@ message BattleResultsProto {
 	repeated RaidEncounterProto post_raid_encounter = 9;
 	repeated AwardedGymBadge gym_badge = 10;
 	repeated LootProto default_raid_item_rewards = 11;
+	int64 battle_duration_ms = 12;
 }

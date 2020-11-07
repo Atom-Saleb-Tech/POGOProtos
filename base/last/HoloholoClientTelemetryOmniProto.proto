@@ -70,5 +70,11 @@ message HoloholoClientTelemetryOmniProto {
 		ArMappingTelemetryProto ar_mapping_telemetry = 62;
 		RemoteRaidTelemetry remote_raid_telemetry = 63;
 		DeviceOSTelemetry device_os_telemetry = 64;
+		NianticProfileTelemetry niantic_profile_telemetry = 65;
+		ChangeOnlineStatusTelemetry change_online_status_telemetry = 66;
+		DeepLinkingTelemetry deep_linking_telemetry = 67;
+		ArMappingSessionTelemetryProto ar_mapping_session_telemetry = 68;
+		PokemonHomeTelemetry pokemon_home_telemetry = 69;
+		PokemonSearchTelemetry pokemon_search_telemetry = 70;
 	}
 }

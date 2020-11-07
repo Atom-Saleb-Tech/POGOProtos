@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformLabelGeometry {
+	PlatformPixelPointProto point = 1;
+	int32 min_zoom = 2;
+	int32 max_zoom = 3;
+}

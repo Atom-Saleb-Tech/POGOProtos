@@ -1,0 +1,9 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformBoundingRect {
+	double north = 1;
+	double south = 2;
+	double east = 3;
+	double west = 4;
+}

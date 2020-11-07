@@ -56,6 +56,14 @@ message PokemonProto {
 	float pre_boosted_additional_cp_multiplier = 53;
 	double deployed_gym_lat_degree = 55;
 	double deployed_gym_lng_degree = 56;
+	bool has_mega_evolved = 57;
 	HoloPokemonEggType egg_type = 58;
-	repeated ClientQuestProto quest_buddy_evolution_requirement = 62;
+	int32 temp_evo_cp = 59;
+	float temp_evo_stamina_modifier = 60;
+	float temp_evo_cp_multiplier = 61;
+	repeated HoloTemporaryEvolutionId mega_evolved_forms = 63;
+	repeated PokemonEvolutionQuestProto evolution_quest_info = 64;
+	PokemonCreateDetail origin_detail = 66;
+	repeated fixed64 pokemon_tag_ids = 67;
+	repeated string origin_events = 68;
 }

@@ -7,6 +7,8 @@ message UpdateInvasionBattleProto {
 	repeated PokemonStaminaUpdateProto health_update = 3;
 	bool complete_battle = 4;
 	UpdateType update_type = 5;
+	int64 lobby_join_time_ms = 6;
+	CombatQuestUpdateProto combat_quest_update = 7;
 
 	enum UpdateType {
 		POKEMON_HEALTH = 0;

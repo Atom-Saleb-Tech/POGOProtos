@@ -9,15 +9,16 @@ message Distribution {
 	BucketOptions bucket_options = 5;
 	repeated int64 bucket_counts = 6;
 
+	message Range {
+		int64 min = 1;
+		int64 max = 2;
+	}
+
 	message BucketOptions {
 		oneof BucketType {
 			LinearBuckets linear_buckets = 1;
 			ExponentialBuckets exponential_buckets = 2;
 			ExplicitBuckets explicit_buckets = 3;
-		}
-
-		message ExplicitBuckets {
-			repeated int64 bounds = 1;
 		}
 
 		message ExponentialBuckets {
@@ -32,10 +33,9 @@ message Distribution {
 			int64 offset = 3;
 		}
 
-	}
+		message ExplicitBuckets {
+			repeated int64 bounds = 1;
+		}
 
-	message Range {
-		int64 min = 1;
-		int64 max = 2;
 	}
 }

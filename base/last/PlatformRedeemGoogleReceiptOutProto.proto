@@ -2,7 +2,8 @@ syntax = "proto3";
 package DumpProtos;
 
 message PlatformRedeemGoogleReceiptOutProto {
-	string transaction_token = 1;
+	Status status = 1;
+	string transaction_token = 2;
 
 	enum Status {
 		UNSET = 0;

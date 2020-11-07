@@ -4,4 +4,5 @@ package DumpProtos;
 message TitanGrapeshotComposeDataProto {
 	string target_file_path = 1;
 	TitanGrapeshotAuthenticationDataProto authentication = 2;
+	string hash = 3;
 }

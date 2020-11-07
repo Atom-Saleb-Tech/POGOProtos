@@ -1,0 +1,16 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlayerStatsSnapshotsProto {
+	repeated SnapshotData snap_shot = 1;
+
+	message SnapshotData {
+		enum Reason {
+			UNSET = 0;
+			LEVEL_UP = 1;
+		}
+
+		Reason reason = 1;
+		PlayerStatsProto stats = 2;
+	}
+}

@@ -6,6 +6,6 @@ message PlatformInventoryItemProto {
 
 	oneof InventoryItem {
 		HoloInventoryKeyProto deleted_item_key = 2;
-		HoloInventoryItemProto item = 3;
+		HoloInventoryItemProto inventory_item_data = 3;
 	}
 }

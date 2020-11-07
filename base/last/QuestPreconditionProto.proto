@@ -4,6 +4,13 @@ package DumpProtos;
 message QuestPreconditionProto {
 	QuestPreconditionType type = 1;
 
+	enum Operator {
+		UNSET_OPERATOR_OPERATOR = 0;
+		EQUALS = 1;
+		GREATER_THAN = 2;
+		LESS_THAN = 3;
+	}
+
 	oneof Condition {
 		string quest_template_id = 2;
 		Level level = 3;
@@ -11,13 +18,7 @@ message QuestPreconditionProto {
 		Quests quests = 5;
 		MonthYearBucket month_year_bucket = 6;
 		Group group = 7;
-	}
-
-	enum Operator {
-		UNSET_OPERATOR_OPERATOR = 0;
-		EQUALS = 1;
-		GREATER_THAN = 2;
-		LESS_THAN = 3;
+		StoryLine story_line = 8;
 	}
 
 	enum QuestPreconditionType {
@@ -31,6 +32,14 @@ message QuestPreconditionProto {
 		QUEST_PRECONDITION_RECEIVED_ANY_LISTED_QUEST = 7;
 		QUEST_PRECONDITION_MONTH_YEAR_BUCKET = 8;
 		QUEST_PRECONDITION_EXCLUSIVE_IN_PROGRESS_GROUP = 9;
+		QUEST_PRECONDITION_STORYLINE_PROGRESS = 10;
+	}
+
+	message StoryLine {
+		repeated string mandatory_quest_template_id = 1;
+		repeated string optional_quest_template_id = 2;
+		int32 optional_quests_completed_min = 3;
+		int32 optional_quests_completed_max = 4;
 	}
 
 	message Group {
@@ -42,15 +51,14 @@ message QuestPreconditionProto {
 		Name name = 1;
 	}
 
-	message Level {
-		Operator operator = 1;
-		int32 level = 2;
-	}
-
 	message Medal {
 		HoloBadgeType type = 1;
 		Operator operator = 2;
 		int32 badge_rank = 3;
+	}
+
+	message Quests {
+		repeated string quest_template_ids = 1;
 	}
 
 	message MonthYearBucket {
@@ -58,7 +66,8 @@ message QuestPreconditionProto {
 		int32 month = 2;
 	}
 
-	message Quests {
-		repeated string quest_template_ids = 1;
+	message Level {
+		Operator operator = 1;
+		int32 level = 2;
 	}
 }

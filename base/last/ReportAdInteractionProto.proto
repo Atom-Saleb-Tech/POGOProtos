@@ -14,8 +14,13 @@ message ReportAdInteractionProto {
 		CTAClickInteraction cta_clicked = 8;
 	}
 
-	message CTAClickInteraction {
-		string cta_url = 6;
+	message ViewImpressionInteraction {
+		string preview_image_url = 1;
+		bool is_persisted_gift = 2;
+	}
+
+	message ViewFullscreenInteraction {
+		string fullscreen_image_url = 1;
 	}
 
 	message FullScreenInteraction {
@@ -25,12 +30,7 @@ message ReportAdInteractionProto {
 		bool took_screenshot = 4;
 	}
 
-	message ViewFullscreenInteraction {
-		string fullscreen_image_url = 1;
-	}
-
-	message ViewImpressionInteraction {
-		string preview_image_url = 1;
-		bool is_persisted_gift = 2;
+	message CTAClickInteraction {
+		string cta_url = 6;
 	}
 }

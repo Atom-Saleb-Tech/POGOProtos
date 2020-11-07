@@ -28,12 +28,16 @@ message BelugaPokemonProto {
 	int32 move1 = 24;
 	int32 move2 = 25;
 
-	enum PokemonCostume {
-		UNSET = 0;
-		HOLIDAY_2016 = 1;
-		ANNIVERSARY = 2;
-		ONE_YEAR_ANNIVERSARY = 3;
-		HALLOWEEN_2017 = 4;
+	enum TrainerGender {
+		TRAINER_MALE = 0;
+		TRAINER_FEMALE = 1;
+	}
+
+	enum Team {
+		NONE = 0;
+		TEAM_BLUE = 1;
+		TEAM_RED = 2;
+		TEAM_YELLOW = 3;
 	}
 
 	enum PokemonForm {
@@ -48,15 +52,11 @@ message BelugaPokemonProto {
 		GENDERLESS = 3;
 	}
 
-	enum Team {
-		NONE = 0;
-		TEAM_BLUE = 1;
-		TEAM_RED = 2;
-		TEAM_YELLOW = 3;
-	}
-
-	enum TrainerGender {
-		TRAINER_MALE = 0;
-		TRAINER_FEMALE = 1;
+	enum PokemonCostume {
+		UNSET = 0;
+		HOLIDAY_2016 = 1;
+		ANNIVERSARY = 2;
+		ONE_YEAR_ANNIVERSARY = 3;
+		HALLOWEEN_2017 = 4;
 	}
 }

@@ -11,4 +11,5 @@ message RedeemPasscodeRewardProto {
 	int32 pokecoins = 7;
 	repeated HoloBadgeType badges = 8;
 	repeated RedeemedStickerProto redeemed_stickers = 9;
+	repeated string quest_ids = 10;
 }

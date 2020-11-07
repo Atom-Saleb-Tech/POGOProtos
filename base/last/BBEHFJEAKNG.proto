@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+message BBEHFJEAKNG {
+	int64 nmciacipohm = 1;
+	double lopeglmjchg = 2;
+	double pkpndimbhpb = 3;
+}

@@ -10,6 +10,7 @@ message GymFeedPokemonOutProto {
 	int32 num_candy_awarded = 6;
 	HoloPokemonFamilyId candy_family_id = 7;
 	int64 cooldown_complete = 8;
+	int32 num_xl_candy_awarded = 9;
 
 	enum Result {
 		UNSET = 0;

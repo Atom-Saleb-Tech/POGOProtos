@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PokemonTagColorBinding {
+	PokemonTagColor color = 1;
+	string hex_code = 2;
+}

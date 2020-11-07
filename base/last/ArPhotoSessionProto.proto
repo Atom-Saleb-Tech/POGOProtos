@@ -25,18 +25,18 @@ message ArPhotoSessionProto {
 	int32 session_start_to_plane_detection_ms = 21;
 	int32 plane_detection_to_user_interaction_ms = 22;
 
+	enum ArType {
+		UNSET = 0;
+		PLUS = 1;
+		CLASSIC = 2;
+	}
+
 	enum ArContext {
 		NONE = 0;
 		AR_ENCOUNTER = 1;
 		AR_SNAPSHOT = 2;
 		SINGLEPLAYER_BUDDY = 3;
 		MULTIPLAYER_BUDDY = 4;
-	}
-
-	enum ArType {
-		UNSET = 0;
-		PLUS = 1;
-		CLASSIC = 2;
 	}
 
 	enum BatteryStatus {
@@ -56,10 +56,9 @@ message ArPhotoSessionProto {
 		PHOTO_SHARED = 5;
 	}
 
-	message ArConditions {
-		int64 timestamp = 1;
-		bool occlusions_enabled = 2;
-		Step current_ar_step = 3;
+	message FramerateSample {
+		ArConditions conditions = 1;
+		int32 framerate = 2;
 	}
 
 	message BatterySample {
@@ -68,9 +67,10 @@ message ArPhotoSessionProto {
 		BatteryStatus status = 3;
 	}
 
-	message FramerateSample {
-		ArConditions conditions = 1;
-		int32 framerate = 2;
+	message ArConditions {
+		int64 timestamp = 1;
+		bool occlusions_enabled = 2;
+		Step current_ar_step = 3;
 	}
 
 	message ProcessorSample {

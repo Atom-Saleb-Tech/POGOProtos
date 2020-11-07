@@ -12,5 +12,6 @@ message TodayViewSectionProto {
 		TimedQuestSectionProto timed_quest = 6;
 		EventBannerSectionProto event_banner = 7;
 		TimedGroupChallengeSectionProto timed_group_challenge = 8;
+		MiniCollectionSectionProto mini_collection = 9;
 	}
 }

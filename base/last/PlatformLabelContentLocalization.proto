@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformLabelContentLocalization {
+	string language = 1;
+	string name = 2;
+}

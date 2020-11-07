@@ -21,6 +21,9 @@ message HoloInventoryItemProto {
 		GiftBoxesProto gift_boxes = 15;
 		BelugaIncenseBoxProto beluga_incense = 16;
 		LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;
+		MegaEvolvePokemonSpeciesProto mega_evolve_species = 21;
 		StickerProto sticker = 22;
+		PokemonHomeProto pokemon_home = 23;
+		PlayerStatsSnapshotsProto player_stats_snapshots = 25;
 	}
 }

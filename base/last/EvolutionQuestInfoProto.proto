@@ -1,0 +1,8 @@
+syntax = "proto3";
+package DumpProtos;
+
+message EvolutionQuestInfoProto {
+	string quest_requirement_template_id = 1;
+	string description = 2;
+	int32 target = 3;
+}

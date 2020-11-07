@@ -1,0 +1,9 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PlatformMapArea {
+	string description = 1;
+	int32 epoch = 2;
+	string map_provider = 3;
+	repeated PlatformBoundingRect bounding_rect = 4;
+}

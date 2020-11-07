@@ -17,6 +17,7 @@ message PlatformGetFriendDetailsResponse {
 		PlatformProfileDetailsProto profile = 2;
 		PlayerStatusDetailsProto player_status = 3;
 		PlatformFriendDetailsProto calling_game_data = 4;
+		PlatformSocialV2Enum.InvitationStatus invitation_status = 5;
 	}
 
 	message PlayerStatusDetailsProto {
@@ -29,9 +30,8 @@ message PlatformGetFriendDetailsResponse {
 		}
 
 		Result result = 1;
-		double distance_to_player_km = 2;
-		PlatformPlayerLocaleProto locale = 3;
-		PlatformSocialV2Enum.OnlineStatus online_status = 4;
-		string last_played_app_key = 5;
+		PlatformPlayerLocaleProto locale = 2;
+		PlatformSocialV2Enum.OnlineStatus online_status = 3;
+		string last_played_app_key = 4;
 	}
 }

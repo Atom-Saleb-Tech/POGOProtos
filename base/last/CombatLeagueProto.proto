@@ -14,6 +14,7 @@ message CombatLeagueProto {
 	string battle_party_combat_league_template_id = 10;
 	LeagueType league_type = 11;
 	string border_color_hex = 12;
+	bool allow_temp_evos = 13;
 
 	enum ConditionType {
 		UNSET = 0;
@@ -25,12 +26,53 @@ message CombatLeagueProto {
 		POKEMON_WHITELIST = 6;
 		POKEMON_BANLIST = 7;
 		POKEMON_CAUGHT_TIMESTAMP = 8;
+		POKEMON_LEVEL_RANGE = 9;
 	}
 
 	enum LeagueType {
 		NONE = 0;
 		STANDARD = 1;
 		PREMIER = 2;
+	}
+
+	message PokemonLevelRange {
+		int32 min_level = 1;
+		int32 max_level = 2;
+	}
+
+	message PokemonWhitelist {
+		string name = 1;
+		repeated PokemonWithForm pokemon = 2;
+	}
+
+	message PokemonConditionProto {
+		oneof Condition {
+			WithPokemonCpLimitProto with_pokemon_cp_limit = 2;
+			WithPokemonTypeProto with_pokemon_type = 3;
+			WithPokemonCategoryProto with_pokemon_category = 4;
+			PokemonWhitelist pokemon_whitelist = 5;
+			PokemonBanlist pokemon_banlist = 6;
+			PokemonCaughtTimestamp pokemon_caught_timestamp = 7;
+			PokemonLevelRange pokemon_level_range = 8;
+		}
+
+		ConditionType type = 1;
+	}
+
+	message UnlockConditionProto {
+		oneof Condition {
+			WithPlayerLevelProto with_player_level = 3;
+			WithPokemonCpLimitProto with_pokemon_cp_limit = 4;
+			WithPokemonTypeProto with_pokemon_type = 5;
+			WithPokemonCategoryProto with_pokemon_category = 6;
+			PokemonWhitelist pokemon_whitelist = 7;
+			PokemonBanlist pokemon_banlist = 8;
+			PokemonCaughtTimestamp pokemon_caught_timestamp = 9;
+			PokemonLevelRange pokemon_level_range = 10;
+		}
+
+		ConditionType type = 1;
+		int32 min_pokemon_count = 2;
 	}
 
 	message PokemonBanlist {
@@ -43,41 +85,8 @@ message CombatLeagueProto {
 		int64 before_timestamp = 2;
 	}
 
-	message PokemonConditionProto {
-		oneof Condition {
-			WithPokemonCpLimitProto with_pokemon_cp_limit = 2;
-			WithPokemonTypeProto with_pokemon_type = 3;
-			WithPokemonCategoryProto with_pokemon_category = 4;
-			PokemonWhitelist pokemon_whitelist = 5;
-			PokemonBanlist pokemon_banlist = 6;
-			PokemonCaughtTimestamp pokemon_caught_timestamp = 7;
-		}
-
-		ConditionType type = 1;
-	}
-
-	message PokemonWhitelist {
-		string name = 1;
-		repeated PokemonWithForm pokemon = 2;
-	}
-
 	message PokemonWithForm {
 		HoloPokemonId id = 1;
 		PokemonDisplayProto.Form form = 2;
-	}
-
-	message UnlockConditionProto {
-		oneof Condition {
-			WithPlayerLevelProto with_player_level = 3;
-			WithPokemonCpLimitProto with_pokemon_cp_limit = 4;
-			WithPokemonTypeProto with_pokemon_type = 5;
-			WithPokemonCategoryProto with_pokemon_category = 6;
-			PokemonWhitelist pokemon_whitelist = 7;
-			PokemonBanlist pokemon_banlist = 8;
-			PokemonCaughtTimestamp pokemon_caught_timestamp = 9;
-		}
-
-		ConditionType type = 1;
-		int32 min_pokemon_count = 2;
 	}
 }

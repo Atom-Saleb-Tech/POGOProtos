@@ -5,4 +5,5 @@ message PlatformAccountSettingsProto {
 	bool opt_out_social_graph_import = 1;
 	PlatformSocialSettings.ConsentStatus online_status_consent = 2;
 	PlatformSocialSettings.ConsentStatus last_played_date_consent = 3;
+	PlatformSocialSettings.ConsentStatus codename_consent = 4;
 }

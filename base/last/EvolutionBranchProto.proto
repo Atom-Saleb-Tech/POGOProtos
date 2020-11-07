@@ -14,5 +14,8 @@ message EvolutionBranchProto {
 	bool only_nighttime = 11;
 	int32 priority = 12;
 	bool no_candy_cost_via_trade = 13;
-	repeated string quest_requirement_template_id = 17;
+	HoloTemporaryEvolutionId temporary_evolution = 14;
+	int32 temporary_evolution_energy_cost = 15;
+	int32 temporary_evolution_energy_cost_subsequent = 16;
+	repeated EvolutionQuestInfoProto quest_display = 17;
 }

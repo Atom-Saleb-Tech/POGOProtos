@@ -36,6 +36,10 @@ message EventSectionProto {
 			BATTLE = 24;
 			XP = 25;
 			SHOP = 26;
+			LOCATION = 27;
+			EVENT = 28;
+			MYSTERY_BOX = 29;
+			TRADE_BALL = 30;
 		}
 
 		string text = 1;

@@ -1,0 +1,16 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PokemonCreateDetail {
+
+	oneof Detail {
+		WildCreateDetail wild_detail = 1;
+		EggCreateDetail egg_detail = 2;
+		RaidCreateDetail raid_detail = 3;
+		QuestCreateDetail quest_detail = 4;
+		VsSeekerCreateDetail vs_seeker_detail = 5;
+		InvasionCreateDetail invasion_detail = 6;
+		PhotobombCreateDetail photobomb_detail = 7;
+		TutorialCreateDetail tutorial_detail = 8;
+	}
+}

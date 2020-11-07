@@ -5,6 +5,12 @@ message ListAvatarCustomizationsOutProto {
 	Result result = 1;
 	repeated AvatarCustomization avatar_customizations = 2;
 
+	enum Result {
+		UNSET = 0;
+		SUCCESS = 1;
+		FAILURE = 2;
+	}
+
 	enum Label {
 		UNSET_LABEL = 0;
 		DEFAULT = 1;
@@ -16,12 +22,6 @@ message ListAvatarCustomizationsOutProto {
 		UNLOCKABLE = 7;
 		VIEWED = 8;
 		LOCKED_PURCHASABLE = 9;
-	}
-
-	enum Result {
-		UNSET = 0;
-		SUCCESS = 1;
-		FAILURE = 2;
 	}
 
 	message AvatarCustomization {

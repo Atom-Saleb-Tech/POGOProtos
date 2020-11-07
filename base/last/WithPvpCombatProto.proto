@@ -4,4 +4,5 @@ package DumpProtos;
 message WithPvpCombatProto {
 	bool requires_win = 1;
 	repeated string combat_league_template_id = 2;
+	HoloBadgeType combat_league_badge = 3;
 }

@@ -56,5 +56,11 @@ message GlobalSettingsProto {
 	RaidTicketSettingsProto raid_ticket_settings = 55;
 	RocketBalloonGlobalSettingsProto rocket_balloon_settings = 56;
 	TimedGroupChallengeSettingsProto timed_group_challenge_settings = 57;
+	MegaEvoGlobalSettingsProto mega_evo_settings = 58;
 	LobbyClientSettingsProto lobby_client_settings = 59;
+	QuestEvolutionGlobalSettingsProto quest_evolution_settings = 61;
+	SponsoredPoiFeedbackSettingsProto sponsored_poi_feedback_settings = 62;
+	CrashlyticsSettingsProto crashlytics_settings = 65;
+	CatchPokemonGlobalSettingsProto catch_pokemon_settings = 66;
+	IdfaSettingsProto idfa_settings = 67;
 }

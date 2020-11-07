@@ -1,0 +1,13 @@
+syntax = "proto3";
+package DumpProtos;
+
+message PokemonHomeFormReversionProto {
+	HoloPokemonId pokemon_id = 1;
+	repeated FormMapping form_mapping = 2;
+
+	message FormMapping {
+		PokemonDisplayProto.Form reverted_form = 1;
+		repeated PokemonDisplayProto.Form unauthorized_forms = 2;
+		string reverted_form_string = 3;
+	}
+}

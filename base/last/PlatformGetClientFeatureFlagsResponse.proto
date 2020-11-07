@@ -3,4 +3,5 @@ package DumpProtos;
 
 message PlatformGetClientFeatureFlagsResponse {
 	PlatformSocialClientFeatures feature_flags = 1;
+	PlatformSocialClientGlobalSettings global_settings = 2;
 }

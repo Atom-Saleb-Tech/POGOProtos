@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+message BuddyEvolutionWalkQuestProto {
+	float last_km_recorded = 1;
+}

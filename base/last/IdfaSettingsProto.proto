@@ -1,0 +1,6 @@
+syntax = "proto3";
+package DumpProtos;
+
+message IdfaSettingsProto {
+	bool optin_enabled = 1;
+}
