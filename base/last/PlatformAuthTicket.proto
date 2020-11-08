@@ -1,7 +1,7 @@
 syntax = "proto3";
 package DumpProtos;
 
-message AuthTicket {
+message PlatformAuthTicket {
 	bytes start = 1;
 	uint64 expire_timestamp_ms = 2;
 	bytes end = 3;
