@@ -1,0 +1,7 @@
+syntax = "proto3";
+package DumpProtos;
+
+message ZZ_UndefinedProto4 {
+	string zz_4_ob_string_value_0 = 1;
+	repeated ZZ_UndefinedProto2 zz_4_ob_list_value_0 = 2;
+}

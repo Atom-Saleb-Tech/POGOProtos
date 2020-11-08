@@ -1,0 +1,11 @@
+syntax = "proto3";
+package DumpProtos;
+
+message ZZ_UndefinedProto1 {
+	ZZ_1_Result result = 1;
+
+	enum ZZ_1_Result {
+		SUCCESS = 0;
+		ERROR = 1;
+	}
+}
