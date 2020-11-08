@@ -1,7 +1,0 @@
-syntax = "proto3";
-package DumpProtos;
-
-message PJIDLEGBGME {
-	string lfpgdialino = 1;
-	repeated BBEHFJEAKNG mmagniljkbi = 2;
-}
