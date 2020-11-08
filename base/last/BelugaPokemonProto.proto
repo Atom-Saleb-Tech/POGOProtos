@@ -25,8 +25,8 @@ message BelugaPokemonProto {
 	PokemonCostume costume = 21;
 	PokemonForm form = 22;
 	bool shiny = 23;
-	int32 move1 = 24;
-	int32 move2 = 25;
+	HoloPokemonMove move1 = 24;
+	HoloPokemonMove move2 = 25;
 
 	enum TrainerGender {
 		TRAINER_MALE = 0;

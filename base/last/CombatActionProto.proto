@@ -10,7 +10,7 @@ message CombatActionProto {
 	fixed64 active_pokemon_id = 8;
 	fixed64 target_pokemon_id = 14;
 	float minigame_score = 15;
-	int32 move = 16;
+	HoloPokemonMove move = 16;
 
 	enum ActionType {
 		UNSET = 0;
